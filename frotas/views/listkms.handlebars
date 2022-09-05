@@ -1,0 +1,21 @@
+<h1>Lista de Kms</h1>
+
+<div class="kms-cotainer">
+{{#each kms}}
+<div id="table">
+    <table>
+        <thead>
+          <th>ID</th>  
+          <th>Inicial</th>  
+          <th>Final</th>  
+        </thead>
+        <tbody>
+            <td>{{this.id}}</td>
+            <td>{{this.start}}</td>
+            <td>{{this.end}}</td>
+        </tbody>
+    </table>
+    <a href="/routes/km/{{this.id}}">Visualizar</a>
+</div>
+{{/each}}
+</div>

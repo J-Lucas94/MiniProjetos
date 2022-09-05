@@ -1,0 +1,20 @@
+<h1>Registro de jornadas</h1>
+
+<div class="kms-cotainer">
+{{#each jornada}}
+<div id="table">
+    <table>
+        <thead>
+          <th>ID</th>  
+          <th>Inicial</th>  
+          <th>Final</th>  
+        </thead>
+        <tbody>
+            <td>{{this.id}}</td>
+            <td>{{this.hr_start}}</td>
+            <td>{{this.hr_end}}</td>
+        </tbody>
+    </table>
+</div>
+{{/each}}
+</div>

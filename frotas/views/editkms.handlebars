@@ -1,0 +1,16 @@
+<h1>Edite o seu registro:</h1>
+
+<form action="/routes/update" method="post" class="form">
+    <input type="hidden" name="id" value="{{kms.id}}">
+<div class="form-control">
+    <label for="start">Título</label>
+    <input type="text" name="start" placeholder="" value="{{kms.start}}">
+</div>
+
+<div class="form-control">
+    <label for="end">Número de páginas</label>
+    <input type="text" name="end"  placeholder="" value="{{kms.end}}">
+</div>
+
+<input type="submit" value="Editar">
+</form>
